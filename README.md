@@ -16,6 +16,18 @@ Dự án phân tích khám phá dữ liệu (EDA) và trực quan hóa thông ti
 
 ---
 
+## 📊 Dashboard Preview (Trực quan hóa)
+
+> Giao diện Dashboard tương tác được xây dựng trên Power BI, hỗ trợ lọc chéo (cross-filtering) theo thời gian và định dạng nội dung:
+
+https://github.com/dunghoccoding/Netflix-Catalog-Insights-Trends/blob/main/DashBroad.png
+* **Thẻ KPI:** Theo dõi tổng số lượng nội dung (8.793), tỷ trọng Phim lẻ (6.129), Phim bộ (2.664) và số quốc gia hiện diện.
+* **Line Chart:** Thể hiện xu hướng tốc độ tăng trưởng danh mục từ năm 2008 đến 2021.
+* **Clustered Bar Chart:** Xếp hạng Top 10 quốc gia có sản lượng nội dung đóng góp lớn nhất.
+* **Slicers:** Hỗ trợ lọc động theo định dạng (`Movie` / `TV Show`) và thanh trượt năm phát hành (`Year Added`).
+
+---
+
 ## 🛠 Tech Stack & Tools
 
 * **Ngôn ngữ & Môi trường:** Python 3.x, Jupyter Notebook.
@@ -29,13 +41,13 @@ Dự án phân tích khám phá dữ liệu (EDA) và trực quan hóa thông ti
 
 ```text
 ├── data/
-│   ├── netflix_titles.csv               # Dữ liệu gốc
-│   └── netflix_titles_final_clean_2.csv # Dữ liệu sạch sau tiền xử lý
+│   ├── netflix_titles.csv                 # Dữ liệu gốc
+│   └── netflix_titles_final_clean_2.csv   # Dữ liệu sạch sau tiền xử lý (8,793 dòng)
 ├── notebooks/
-│   └── EDA_Anal.ipynb                   # Luồng tiền xử lý và EDA chi tiết
+│   └── EDA_Anal.ipynb                     # Luồng tiền xử lý và EDA chi tiết
 ├── dashboard/
-│   ├── dashboard.pbix                   # File thiết kế Power BI
-│   
+│   ├── Dashboard.pbix                     # File thiết kế Power BI
+│   └── DashBoard.png              # Ảnh chụp Dashboard hoàn thiện
 ├── docs/
-│   └── KhaoSat.docx                     # Tài liệu khảo sát và báo cáo dự án
+│   └── KhaoSat.docx                       # Tài liệu khảo sát và báo cáo dự án
 └── README.md
